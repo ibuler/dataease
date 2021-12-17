@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "0 1 * * *"
 
 name: Check recent handle issues
 
@@ -14,4 +14,4 @@ jobs:
           hook: ${{ secrets.WECHAT_GROUP_WEB_HOOK }}
           type: recent
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
